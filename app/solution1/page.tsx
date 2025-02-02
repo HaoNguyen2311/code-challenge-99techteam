@@ -3,11 +3,11 @@ import { useState } from "react";
 
 const Solution1 = () => {
   const [value, setValue] = useState(1);
-  var sum_to_n_a = function (n: number) {
+  const sum_to_n_a = function (n: number) {
     return (n * (n + 1)) / 2;
   };
 
-  var sum_to_n_b = function (n: number) {
+  const sum_to_n_b = function (n: number) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
       sum += i;
@@ -15,7 +15,7 @@ const Solution1 = () => {
     return sum;
   };
 
-  var sum_to_n_c = function (n: number): number {
+  const sum_to_n_c = function (n: number): number {
     if (n === 0) return 0;
     return n + sum_to_n_c(n - 1);
   };
